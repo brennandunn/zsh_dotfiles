@@ -1,0 +1,8 @@
+root=`dirname $0`
+
+# load functions / completions
+fpath=( $root/functions $root/completions $fpath )
+for func in $^fpath/*(-N.x:t); autoload -Uz $func
+
+# load config
+for file in $root/??_*; source $file

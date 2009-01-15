@@ -1,0 +1,6 @@
+# emacs bindings
+bindkey -e
+
+# new tab
+zle -N tab
+bindkey '^N' tab    # create a new tab from the current location with C-n

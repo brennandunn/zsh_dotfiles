@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+ 
+if [[ "$#*" -eq 0 ]]; then
+  source ${root}/env
+  source ${root}/rc
+else
+  local fn
+  for fn in "$@"; do
+    if [[ "$fn" == "aliases" ]]; then
+      source ${zdotdir}/.aliasrc
+    else
+      unfunction $fn
+      autoload -U $fn
+    fi
+  done
+fi

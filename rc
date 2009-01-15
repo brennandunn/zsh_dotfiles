@@ -1,0 +1,9 @@
+zstyle ':completion:*' completer _expand _complete
+
+# completion
+autoload -Uz compinit
+compinit
+
+# colors
+autoload -Uz colors
+colors

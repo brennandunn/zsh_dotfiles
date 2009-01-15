@@ -1,0 +1,20 @@
+
+##
+# History
+##
+
+HISTFILE=~/.zsh.d/.history
+HISTSIZE=100000
+SAVEHIST=1000000
+
+##
+# Path
+##
+path=(/opt/local/bin /opt/local/sbin /opt/local/lib/mysql5/bin /opt/local/apache2/bin $path)
+
+##
+# Options
+##
+setopt CORRECT
+setopt CORRECT_ALL
+setopt EXTENDED_HISTORY

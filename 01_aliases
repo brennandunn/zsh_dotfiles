@@ -1,0 +1,5 @@
+##
+# Aliases
+##
+
+alias l="ls -laFhG"

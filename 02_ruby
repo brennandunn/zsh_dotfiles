@@ -1,0 +1,5 @@
+##
+# Ruby helpers
+##
+
+alias sc='./script/console'
