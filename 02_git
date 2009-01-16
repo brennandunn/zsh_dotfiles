@@ -1,0 +1,10 @@
+
+# Remove deleted files from the index
+alias gst="git status"
+alias ga="git add -i"
+alias gco="git checkout"
+alias gc="git commit -v"
+alias gca="git comimt -v -a"
+alias gsave="git stash save"
+alias gb="git branch"
+alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"

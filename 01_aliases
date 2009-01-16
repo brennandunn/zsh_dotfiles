@@ -2,4 +2,12 @@
 # Aliases
 ##
 
-alias l="ls -laFhG"
+alias ll="ls -al"
+alias ls="ls -AGlph"
+
+##
+# Common directories
+##
+
+alias dpricing="cd ~/dev/decisiv/pricing/pricing.dev.decisiv.net"
+alias dportal="cd ~/dev/decisiv/portal.dev.decisiv.net"

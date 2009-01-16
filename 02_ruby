@@ -3,3 +3,5 @@
 ##
 
 alias sc='./script/console'
+alias dbm='rake db:migrate'
+alias dbmc='rake db:migrate db:test:clone'

@@ -1,5 +1,5 @@
 setopt prompt_subst
 autoload colors
 
-PROMPT='%{$reset_color%}(%B%n%b) %{$fg[green]%}%~%{$reset_color%}%{$(git_info_for_prompt)%}
+PROMPT='%{$reset_color%}(%B%n%b)%{$reset_color%} (%{$fg[cyan]%}%~%{$reset_color%})%{$(git_info_for_prompt)%}
 %{$fg[cyan]%}>%{$fg_bold[cyan]%}>%{$reset_color%}'

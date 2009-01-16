@@ -41,9 +41,9 @@ if [ -n "$g" ]; then
   fi
   
   if [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]]; then
-    color=$fg[red]
+    color=$fg_bold[red]
   else
-    color=$fg[green]
+    color=$fg_bold[green]
   fi
 
   if [ -n "$1" ]; then
