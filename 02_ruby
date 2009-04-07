@@ -5,3 +5,10 @@
 alias sc='./script/console'
 alias dbm='rake db:migrate'
 alias dbmc='rake db:migrate db:test:clone'
+
+# Export autotest plugin to project
+function autotestify () {
+  git clone git://github.com/metaskills/autotest_railsplugin.git
+  rm -rf ./autotest_railsplugin/.git
+  mv ./autotest_railsplugin ./autotest
+}

@@ -1,3 +1,5 @@
 alias apstop="echo 'Stopping Apache2:' && sudo apachectl stop"
 alias apstart="echo 'Starting Apache2:' && sudo apachectl start"
 alias apr="apstop ; sleep 3 ; apstart"
+
+alias ptouch="mkdir -p ./tmp && touch ./tmp/restart.txt"

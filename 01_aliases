@@ -4,6 +4,9 @@
 
 alias ll="ls -al"
 alias ls="ls -AGlph"
+alias ..="cd .."
+alias ....="cd ../.."
+alias ......="cd ../../.."
 
 ##
 # Common directories

@@ -1,10 +1,11 @@
 
+alias gfame='git log | git shortlog -n -s'
 # Remove deleted files from the index
 alias gst="git status"
 alias ga="git add -i"
 alias gco="git checkout"
-alias gc="git commit -v"
-alias gca="git comimt -v -a"
+alias gc="gitx --commit"
 alias gsave="git stash save"
 alias gb="git branch"
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
+alias rm_ds="find . -name .DS_Store | xargs rm"
